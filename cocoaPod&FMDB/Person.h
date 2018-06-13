@@ -10,4 +10,11 @@
 
 @interface Person : NSObject
 
+@property(nonatomic,assign) int ID;
+@property(nonatomic,copy) NSString * name;
+@property(nonatomic,copy) NSString * phone;
+@property(nonatomic,assign) int score;
+
+
+
 @end

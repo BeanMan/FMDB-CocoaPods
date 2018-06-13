@@ -15,6 +15,8 @@
 		0728760520D0B3AA00EC2C13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0728760420D0B3AA00EC2C13 /* main.m */; };
 		0728760F20D0B3AA00EC2C13 /* cocoaPod_FMDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0728760E20D0B3AA00EC2C13 /* cocoaPod_FMDBTests.m */; };
 		0728761A20D0B3AA00EC2C13 /* cocoaPod_FMDBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0728761920D0B3AA00EC2C13 /* cocoaPod_FMDBUITests.m */; };
+		0728762920D0C32100EC2C13 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0728762820D0C32100EC2C13 /* Person.m */; };
+		44EC006EC05237A41B007C6E /* libPods-cocoaPod&FMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0388086A6C62C2220AB91EF6 /* libPods-cocoaPod&FMDB.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0388086A6C62C2220AB91EF6 /* libPods-cocoaPod&FMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cocoaPod&FMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		072875F220D0B3A800EC2C13 /* cocoaPod&FMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocoaPod&FMDB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		072875F520D0B3A800EC2C13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		072875F620D0B3A800EC2C13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,10 @@
 		0728761520D0B3AA00EC2C13 /* cocoaPod&FMDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cocoaPod&FMDBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0728761920D0B3AA00EC2C13 /* cocoaPod_FMDBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cocoaPod_FMDBUITests.m; sourceTree = "<group>"; };
 		0728761B20D0B3AA00EC2C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0728762720D0C32100EC2C13 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0728762820D0C32100EC2C13 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		29DC7E58EAB4C9970A53802C /* Pods-cocoaPod&FMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoaPod&FMDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-cocoaPod&FMDB/Pods-cocoaPod&FMDB.release.xcconfig"; sourceTree = "<group>"; };
+		F60E895768F0F31915C84A6D /* Pods-cocoaPod&FMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocoaPod&FMDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cocoaPod&FMDB/Pods-cocoaPod&FMDB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44EC006EC05237A41B007C6E /* libPods-cocoaPod&FMDB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C87035CF1CFBA4E6B5B6F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0388086A6C62C2220AB91EF6 /* libPods-cocoaPod&FMDB.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		072875E920D0B3A800EC2C13 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,8 @@
 				0728760D20D0B3AA00EC2C13 /* cocoaPod&FMDBTests */,
 				0728761820D0B3AA00EC2C13 /* cocoaPod&FMDBUITests */,
 				072875F320D0B3A800EC2C13 /* Products */,
+				4EBDD0A5814597015679C1FE /* Pods */,
+				04C87035CF1CFBA4E6B5B6F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +123,8 @@
 				072875F620D0B3A800EC2C13 /* AppDelegate.m */,
 				072875F820D0B3A800EC2C13 /* ViewController.h */,
 				072875F920D0B3A800EC2C13 /* ViewController.m */,
+				0728762720D0C32100EC2C13 /* Person.h */,
+				0728762820D0C32100EC2C13 /* Person.m */,
 				072875FB20D0B3A800EC2C13 /* Main.storyboard */,
 				072875FE20D0B3AA00EC2C13 /* Assets.xcassets */,
 				0728760020D0B3AA00EC2C13 /* LaunchScreen.storyboard */,
@@ -132,6 +152,15 @@
 			path = "cocoaPod&FMDBUITests";
 			sourceTree = "<group>";
 		};
+		4EBDD0A5814597015679C1FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F60E895768F0F31915C84A6D /* Pods-cocoaPod&FMDB.debug.xcconfig */,
+				29DC7E58EAB4C9970A53802C /* Pods-cocoaPod&FMDB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0728761E20D0B3AA00EC2C13 /* Build configuration list for PBXNativeTarget "cocoaPod&FMDB" */;
 			buildPhases = (
+				B185F40728489311568AE308 /* [CP] Check Pods Manifest.lock */,
 				072875EE20D0B3A800EC2C13 /* Sources */,
 				072875EF20D0B3A800EC2C13 /* Frameworks */,
 				072875F020D0B3A800EC2C13 /* Resources */,
@@ -257,6 +287,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B185F40728489311568AE308 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cocoaPod&FMDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		072875EE20D0B3A800EC2C13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +315,7 @@
 			files = (
 				072875FA20D0B3A800EC2C13 /* ViewController.m in Sources */,
 				0728760520D0B3AA00EC2C13 /* main.m in Sources */,
+				0728762920D0C32100EC2C13 /* Person.m in Sources */,
 				072875F720D0B3A800EC2C13 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +483,7 @@
 		};
 		0728761F20D0B3AA00EC2C13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F60E895768F0F31915C84A6D /* Pods-cocoaPod&FMDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +500,7 @@
 		};
 		0728762020D0B3AA00EC2C13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29DC7E58EAB4C9970A53802C /* Pods-cocoaPod&FMDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
